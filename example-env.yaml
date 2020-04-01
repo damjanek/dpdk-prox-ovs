@@ -1,0 +1,23 @@
+parameters:
+  gen_az: nova:compute1.example.com
+  swap_az: nova:compute2.example.com
+  jump_az: nova:compute3.example.com
+  control_net_prefix: "192.168.10.0"
+  control_gen_ip: "192.168.10.104"
+  control_swap_ip: "192.168.10.105"
+  control_jump_ip: "192.168.10.106"
+  data_net_prefix: "192.168.11.0"
+  data_gen_ip: "192.168.11.104"
+  data_swap_ip: "192.168.11.105"
+  same_host: False
+  packet_mode: True
+  drop_rate: "0.01"
+  start_speed: 200
+  packet_sizes:
+  - 64
+  - 256
+  - 512
+  - 1024
+  - 1500
+  flows:
+  - 1024
