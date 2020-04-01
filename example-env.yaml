@@ -1,4 +1,5 @@
 parameters:
+  vrouter_cpus: 3
   gen_az: nova:compute1.example.com
   swap_az: nova:compute2.example.com
   jump_az: nova:compute3.example.com
